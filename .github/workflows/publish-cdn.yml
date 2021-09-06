@@ -90,11 +90,3 @@ jobs:
         run: |
           npm run build toastmark
           npm run build editor
-      - name: Publish CDN
-        run: |
-          npm run publish:cdn
-        env:
-          TOAST_CLOUD_TENENTID: ${{ secrets.TOAST_CLOUD_TENENTID }}
-          TOAST_CLOUD_STORAGEID: ${{ secrets.TOAST_CLOUD_STORAGEID }}
-          TOAST_CLOUD_USERNAME: ${{ secrets.TOAST_CLOUD_USERNAME }}
-          TOAST_CLOUD_PASSWORD: ${{ secrets.TOAST_CLOUD_PASSWORD }}
